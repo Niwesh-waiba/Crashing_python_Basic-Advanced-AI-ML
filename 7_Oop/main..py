@@ -41,3 +41,39 @@ calc_1.add(1,2)
 calc_1.multiply(1,2)
 calc_1.divide(1,2)
 calc_1.subtract(1,2)
+
+
+#constructer
+
+class KBC:
+    def __init__(self,user_name):
+        print(f'welcome to KBC {user_name}')
+
+game_for_Niwesh=KBC('Niwesh')
+
+game_for_Niwesh=KBC('Neuu')
+
+
+'''
+How does encapsulation and different instances work
+'''
+
+print('--'*25)
+
+class animal:
+    
+    def __init__(self,animalName, animalSpecies, animalDOB):
+        self.name= animalName
+        self.species=animalSpecies
+        self.DOB=animalDOB
+
+    def display_all_info(self):
+        print('The species is',self.species, '\nThe dob is',self.DOB,'\nThe name is',self.name)
+
+species_1=animal('pakkun', 'Dog','2015-03-03')
+
+print(species_1.name)
+
+print(species_1.species)
+
+species_1.display_all_info()
